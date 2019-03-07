@@ -15,3 +15,20 @@ Specifically this repository contains methods/ scripts for:
 
 - testing for changes in allele frequencies and calculating population genetic parameters as well as custom plotting/ visualization in R
   - Popoolation and vcftools can be used to do many of the above calculations 
+
+## Computing Environment and Job Scheduling
+Please see my repository on how I typically do this https://github.com/sudarshanchari/Computing_Environment_Job_Scheduling
+  
+## Adapter trimming
+I have extensively used Trimmomatic (http://www.usadellab.org/cms/?page=trimmomatic) and Trim Galore (https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/). Both of these tools are easy to use and once again for a simple case, I haven't seen a qualitative difference between the two. For this project I have used Trim Galore
+
+```
+# source activate ngs
+# conda install trim-galore
+
+# For paired end reads
+trim_galore --paired filename_Read1.fastq.gz filename_Read2.fastq.gz -o folder_name
+
+# TrimGalore automatically prints out filename within the output folder based on the input filename
+
+```
