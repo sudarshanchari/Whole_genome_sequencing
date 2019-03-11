@@ -30,5 +30,6 @@ I have extensively used Trimmomatic (http://www.usadellab.org/cms/?page=trimmoma
 trim_galore --paired filename_Read1.fastq.gz filename_Read2.fastq.gz -o folder_name
 
 # TrimGalore automatically prints out filename within the output folder based on the input filename
+# TrimGalore also autodetects the adapters to be trimmed based on the 1st million reads
 
 ```
