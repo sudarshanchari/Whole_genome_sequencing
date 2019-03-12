@@ -54,3 +54,4 @@ LEADING:3 TRAILING:3 MAXINFO:40:0.4 MINLEN:50
 # Check the trimmed sequences for discrepancies in the flags. If everything looks fine, please proceed.
 
 ```
+
